@@ -1,0 +1,16 @@
+configuration {
+	lines: 5;
+	columns: 1;
+	font: "Hack Regular 12";
+	bw: 1;
+	padding: 5;
+	fixed-num-lines: true;
+	sidebar-mode: true;
+	separator-style: "solid";
+	hide-scrollbar: true;
+	color-normal: "#1D1F21, #C5C8C6, #1D1F21, #707880, #C5C8C6";
+	color-urgent: "#1D1F21, #C5C8C6, #1D1F21, #707880, #C5C8C6";
+	color-active: "#1D1F21, #C5C8C6, #1D1F21, #707880, #C5C8C6";
+	color-window: "#1D1F21, #707880, #707880";
+}
+@import "/home/users/furrert/.local/share/rofi/themes/nord.rasi"
