@@ -35,7 +35,11 @@ set autoindent
 set smartindent
 
 " copy'n'paste, search - huge stackoverflow vibes over here
-set clipboard=unnamedplus
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 set hlsearch    " highlight search matches
 set incsearch   " incremental search
 set ignorecase  " ignore case by default
@@ -67,6 +71,9 @@ set number
 
 " yes, vim, these are pairs, too
 set matchpairs+=<:>
+
+" make backspace work like in most other programs
+set backspace=indent,eol,start
 
 "
 " KEYBINDINGS - to be foster lazyness
